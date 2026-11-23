@@ -38,4 +38,6 @@ cụ phát hiện tấn công.
 - **Task 1 – ARP Cache Poisoning:** đầu độc cache bằng ARP Request, ARP Reply và Gratuitous ARP.
 - **Task 2 – MITM trên Telnet:** chặn và sửa dữ liệu phiên Telnet.
 - **Task 3 – MITM trên Netcat:** chặn kết nối Netcat, thay thế tên và che thông tin nhạy cảm (email, số điện thoại).
-- **Mở rộng – ARP Spoofing Detector:** phát hiện tấn công bằng cách giám sát gói ARP.
+- **Mở rộng – Phát hiện & Phòng chống:**
+  - **ARP Spoofing Detector:** phát hiện tấn công bằng cách giám sát gói ARP, cảnh báo khi ánh xạ IP–MAC bất thường.
+  - **Static ARP:** phòng chống bằng cách cố định ánh xạ IP–MAC (`arp -s`), chặn việc cache bị ghi đè.
